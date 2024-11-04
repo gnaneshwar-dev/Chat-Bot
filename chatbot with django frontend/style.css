@@ -1,0 +1,293 @@
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.bot-message {
+    background-color: #f1f5f9;
+    color: #333;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-input-container {
+    background-color: #fff;
+    border-top: 1px solid #e6e6e6;
+}
+
+.pill-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pill {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pill:hover {
+    background-color: #005bb5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f3f5;
+    color: #333;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    scroll-behavior: smooth;
+    border-bottom: 2px solid #ddd;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.start-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.start-btn-container button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-input-container input {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chat-input-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.chat-input-container button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.chat-input-container button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bot-message {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #f1f3f5;
+    color: #333;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.pill-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.pill {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 8px 18px;
+    background-color: #1277db;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+}
+
+.pill:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* #schedulePicker {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} */
+
+
+
+/* Schedule Picker Styling */
+#schedulePicker {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 15px;
+}
+
+#schedulePicker h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #343a40; /* Darker color for contrast */
+    margin-bottom: 15px;
+}
+
+#schedulePicker input[type="datetime-local"] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#schedulePicker .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#confirmSchedule {
+    background-color: #28a745; /* Success green */
+    color: white;
+    border: none;
+}
+
+#cancelSchedule {
+    background-color: #dc3545; /* Danger red */
+    color: white;
+    border: none;
+}
+
+/* Hover Effects */
+#confirmSchedule:hover,
+#cancelSchedule:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}

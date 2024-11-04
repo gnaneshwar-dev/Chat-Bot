@@ -1,0 +1,12 @@
+{
+    "greeting": "Nice to meet you, {name}! Would you like to provide your email address or phone number?",
+    "ask_email_or_phone": "Would you like to provide your email address or phone number?",
+    "thank_you_email": "Thank you! We've noted your email: {email}. Please select from the list below:",
+    "thank_you_phone": "Thank you! We've noted your phone number: {phone}. Please select from the list below:",
+    "invalid_input": "Please provide a valid email address or phone number.",
+    "service_selection": "Thank you for your selection: {service}. Would you like to book a demo or call with an expert?",
+    "goodbye": "Goodbye!",
+    "demo_booking": "Thank you. One of our sales representatives will contact you for a demo shortly.",
+    "demo_call": "Thank you. One of our sales representatives will contact you soon."
+  }
+  
